@@ -1,0 +1,78 @@
+[37m[36mINFO[0m[0m 11/20 20:34:51 | Command :: train_all.py baseline --dataset DR --data_dir /home/maryam.arjemandi/Original_Data --algorithm MIRO
+Environment:
+	Python: 3.8.18
+	PyTorch: 1.7.1
+	Torchvision: 0.8.2
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.4
+	PIL: 9.0.1
+Args:
+	algorithm: MIRO
+	checkpoint_freq: None
+	configs: []
+	data_dir: /home/maryam.arjemandi/Original_Data
+	dataset: DR
+	debug: False
+	deterministic: True
+	evalmode: fast
+	holdout_fraction: 0.2
+	model_save: None
+	name: baseline
+	out_dir: train_output/DR/231120_20-34-50_baseline
+	out_root: train_output/DR
+	prebuild_loader: False
+	seed: 0
+	show: False
+	steps: None
+	tb_freq: 10
+	test_envs: None
+	trial_seed: 0
+	unique_name: 231120_20-34-50_baseline
+	work_dir: .
+HParams:
+	data_augmentation: True
+	val_augment: False
+	resnet18: False
+	resnet_dropout: 0.0
+	class_balanced: False
+	optimizer: adam
+	freeze_bn: True
+	pretrained: True
+	lr: 5e-05
+	batch_size: 16
+	weight_decay: 0.0
+	swad: True
+	swad_kwargs: 
+	  n_converge: 3
+	  n_tolerance: 6
+	  tolerance_ratio: 0.3
+	test_batchsize: 128
+	model: swag_regnety_16gf
+	feat_layers: stem_block
+	ld: 0.1
+	lr_mult: 10.0
+Dataset:
+	[DR] #envs=4, #classes=5
+	env0: aptos (#3662)
+	env1: eyepacs (#35126)
+	env2: messidor (#1002)
+	env3: messidor_2 (#1057)
+
+[37m[36mINFO[0m[0m 11/20 20:34:52 | n_steps = 5001
+[37m[36mINFO[0m[0m 11/20 20:34:52 | checkpoint_freq = 200
+[37m[36mINFO[0m[0m 11/20 20:34:52 | n_steps is updated to 5001 => 5001 for checkpointing
+[37m[36mINFO[0m[0m 11/20 20:34:52 | Target test envs = [[0], [1], [2], [3]]
+[37m[36mINFO[0m[0m 11/20 20:34:52 | 
+[37m[36mINFO[0m[0m 11/20 20:34:52 | Testenv name escaping te_aptos -> te_aptos
+[37m[36mINFO[0m[0m 11/20 20:34:52 | Test envs = [0], name = te_aptos
+[37m[36mINFO[0m[0m 11/20 20:34:52 | Batch sizes for each domain: [0, 16, 16, 16] (total=48)
+[37m[36mINFO[0m[0m 11/20 20:34:52 | steps-per-epoch for each domain: 1756.31, 50.12, 52.88 -> min = 50.12
+[37m[36mINFO[0m[0m 11/20 20:35:22 | # of params = 161150365
+[37m[36mINFO[0m[0m 11/20 20:46:07 | test_in     test_out    train_in    train_out   tr_outloss  env0_in     env0_out    env1_out    env2_out    env3_out    step        epoch       loss        reg_loss    step_time   eval_time  
+[37m[36mINFO[0m[0m 11/20 20:46:07 | 0.234471    0.259563    0.000000    0.189268    5.594389    0.234471    0.259563    0.146619    0.170000    0.251185    0           0.000000    1.299530    -5.756460   0.927175    644.755151 
+[37m[36mINFO[0m[0m 11/20 20:59:55 | 0.540273    0.554645    0.000000    0.467178    1.093426    0.540273    0.554645    0.693950    0.300000    0.407583    200         3.990025    3.354895    21.748425   1.336698    547.618029 
+[37m[36mINFO[0m[0m 11/20 21:13:15 | 0.433447    0.419399    0.000000    0.442319    1.177865    0.433447    0.419399    0.632028    0.330000    0.364929    400         7.980050    1.694667    7.014968    1.366152    514.600079 
+[37m[36mINFO[0m[0m 11/20 21:26:32 | 0.530717    0.515027    0.000000    0.656844    0.886380    0.530717    0.515027    0.748897    0.615000    0.606635    600         11.970075   1.533369    5.534748    1.360343    511.789545 
+[37m[36mINFO[0m[0m 11/20 21:39:41 | 0.457679    0.471311    0.000000    0.619209    0.912543    0.457679    0.471311    0.737082    0.585000    0.535545    800         15.960100   1.352798    4.413194    1.401529    496.877632 
+[37m[36mINFO[0m[0m 11/20 21:52:50 | 0.556314    0.532787    0.000000    0.678625    0.909508    0.556314    0.532787    0.758719    0.680000    0.597156    1000        19.950125   1.247791    3.362695    1.358990    505.094857 

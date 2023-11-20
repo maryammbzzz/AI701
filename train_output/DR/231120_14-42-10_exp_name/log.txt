@@ -1,0 +1,70 @@
+[37m[36mINFO[0m[0m 11/20 14:42:10 | Command :: train_all.py exp_name --dataset DR --data_dir /home/maryam.arjemandi/Original_Data/ --algorithm MIRO
+Environment:
+	Python: 3.8.18
+	PyTorch: 1.7.1
+	Torchvision: 0.8.2
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.4
+	PIL: 9.0.1
+Args:
+	algorithm: MIRO
+	checkpoint_freq: None
+	configs: []
+	data_dir: /home/maryam.arjemandi/Original_Data
+	dataset: DR
+	debug: False
+	deterministic: True
+	evalmode: fast
+	holdout_fraction: 0.2
+	model_save: None
+	name: exp_name
+	out_dir: train_output/DR/231120_14-42-10_exp_name
+	out_root: train_output/DR
+	prebuild_loader: False
+	seed: 0
+	show: False
+	steps: None
+	tb_freq: 10
+	test_envs: None
+	trial_seed: 0
+	unique_name: 231120_14-42-10_exp_name
+	work_dir: .
+HParams:
+	data_augmentation: True
+	val_augment: False
+	resnet18: False
+	resnet_dropout: 0.0
+	class_balanced: False
+	optimizer: adam
+	freeze_bn: True
+	pretrained: True
+	lr: 5e-05
+	batch_size: 16
+	weight_decay: 0.0
+	swad: True
+	swad_kwargs: 
+	  n_converge: 3
+	  n_tolerance: 6
+	  tolerance_ratio: 0.3
+	test_batchsize: 128
+	model: swag_regnety_16gf
+	feat_layers: stem_block
+	ld: 0.1
+	lr_mult: 10.0
+Dataset:
+	[DR] #envs=3, #classes=4
+	env0: aptos (#3662)
+	env1: eyepacs (#35126)
+	env2: messidor (#1000)
+
+[37m[36mINFO[0m[0m 11/20 14:42:10 | n_steps = 5001
+[37m[36mINFO[0m[0m 11/20 14:42:10 | checkpoint_freq = 200
+[37m[36mINFO[0m[0m 11/20 14:42:10 | n_steps is updated to 5001 => 5001 for checkpointing
+[37m[36mINFO[0m[0m 11/20 14:42:10 | Target test envs = [[0], [1], [2]]
+[37m[36mINFO[0m[0m 11/20 14:42:10 | 
+[37m[36mINFO[0m[0m 11/20 14:42:10 | Testenv name escaping te_aptos -> te_aptos
+[37m[36mINFO[0m[0m 11/20 14:42:10 | Test envs = [0], name = te_aptos
+[37m[36mINFO[0m[0m 11/20 14:42:10 | Batch sizes for each domain: [0, 16, 16] (total=32)
+[37m[36mINFO[0m[0m 11/20 14:42:10 | steps-per-epoch for each domain: 1756.31, 50.00 -> min = 50.00
+[37m[36mINFO[0m[0m 11/20 14:42:24 | # of params = 161147340
