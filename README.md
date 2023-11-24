@@ -1,5 +1,5 @@
 # Domain Generalization in Diabetic Retinopathy
-Official Repository for the DART 2023 paper titled DGM-DR: Domain Generalization with Mutual Information Regularized Diabetic Retinopathy Classification. [Link to the logs]([https://arxiv.org/abs/2309.09670](https://drive.google.com/drive/folders/1A7OVjSXWGgQzly8PyTyauWMC6Nxyc6Ee))
+Official Repository for the DART 2023 paper titled DGM-DR: Domain Generalization with Mutual Information Regularized Diabetic Retinopathy Classification. [Link to the logs and the weights of the trained model](https://drive.google.com/drive/folders/1A7OVjSXWGgQzly8PyTyauWMC6Nxyc6Ee)
 
 # Abstract:
 Diabetic retinopathy is a severe condition that can cause vision loss if not promptly
@@ -15,8 +15,7 @@ racy of the domain generalization model will be compared between the original
 and modified datasets to assess the effectiveness of the improvements. The find-
 ings of this project is that when applying the mentioned pre-processing techniques,
 the Aptos dataset improves with all of the different augmentations whilst the rest
-of the datasets face a decrease in accuracy which is shown in the result and dis-
-cussion section.
+of the datasets face a decrease in accuracy.
 <p align="center">
     <img src="./figures/model_whitebg.png" width="78%" />
 </p>
