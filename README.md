@@ -17,7 +17,7 @@ ings of this project is that when applying the mentioned pre-processing techniqu
 the Aptos dataset improves with all of the different augmentations whilst the rest
 of the datasets face a decrease in accuracy.
 <p align="center">
-    <img src="./figures/model_whitebg.png" width="78%" />
+    <img src="./figures/Diagram.png" width="78%" />
 </p>
 
 The application code we use is based on backbone codes from DomainBed[1], MIRO[2] and SWAD[3].
